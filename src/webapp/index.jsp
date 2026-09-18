@@ -15,36 +15,31 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <th scope="row">1</th>
             <td>Gerdoc</td>
-            <td>Gutiérrez</td>
+            <td>20</td>
         </tr>
     </tbody>
     </table>
     <a href="MiServlet">Ejecutar Servlet</a>
-º</div>
+</div>
 <div class="container">
     <h1>Formularios</h1>
     <form action="MiServlet" method="get">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+            <div id="nombreHelp" class="form-text">Ingresa el nombre del alumno.</div>
         </div>
         <div class="mb-3">
-            <label for="exampleSelect" class="form-label">Números</label>
-            <select id="exampleSelect" name="exampleSelect" class="form-select" aria-label="Default select example" aria-describedby="selectHelp">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <div id="selectHelp" class="form-text">Test.</div>
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="edad" name="edad" aria-describedby="edadHelp">
+            <div id="edadHelp" class="form-text">Ingresa la edad del alumno.</div>
         </div>
         <button type="submit" class="btn btn-primary">
             Enviar información
